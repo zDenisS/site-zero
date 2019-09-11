@@ -12,11 +12,17 @@
 
     <!--BARRA DE NAVEGAÇÃO-->
     <nav id="menu">
-        <a href="#">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#organizadores">Organizadores</a>
-        <a href="#contato">Contato</a>
-        <a class="right bg-red" href="#">Busca</a>
+        <div style="float: left">
+            <img style="width: 20%;" src="assets/img/dv.jpeg" alt="">
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#organizadores">Organizadores</a>
+            <a href="#contato">Contato</a>
+            <a href="#CRONOGRAMA">Cronograma</a>
+            <a href="cadastrar.html">Cadastrar</a>
+        </div>
     </nav>
     <!--FIM BARRA DE NAVEGAÇÃO-->
 
@@ -25,7 +31,7 @@
 
     <div id="conteudo-principal">
         <h1>Melhor evento de <br/> tecnologia do mundo</h1>
-        <h3>10 de Janeiro de 2020</h3>
+        <h3 id="data">10 de Janeiro de 2020</h3>
         <a class="botao" href="#">Inscrever-se agora</a>
     </div>
     
@@ -36,10 +42,10 @@
     <div class="conteudo">
         <h1 class="titulo">Sobre o evento</h1>
 
-        <div style="width: 40%; margin-right: 5%; float: left;">
+        <div style="width: 40%; margin-left : 5%; float: right;">
            <img style="width: 100%;" src="assets/img/evento.jpeg" alt=""> 
         </div>
-        <div style="margin-top: -20px; width: 55%; float: right;">
+        <div style="margin-top: -20px; width: 55%; float: left;">
             <p> Lorem ipsum dolor sit amet consecte bla bla bla bla
                 tur adipisicing elit. Odio iure texto teste bla bla
                 rerum laboriosam pariatur sint incidunt laborum
@@ -96,32 +102,73 @@
             <h1>João da Silva</h1>
             <h5>Criador do evento</h5>
         </div>
+
+        <div class="item"> 
+            <img style="width: 40%; margin-top: 20px;" src="assets/img/perso4.jpeg" alt="">
+            <h1>Matheus da Silva</h1>
+            <h5>Criador do evento</h5>
+        </div>
     </div>
 </section>
 
 <section id="contato"class="bg-cinza">
     <div class="conteudo">
-            <h1 class="titulo">Contato</h1>
+        <h1 class="titulo">Contato</h1>
 
-            <div style="width: 50%; float:left">
-                <form action="">
-                    <label for="">Nome completo</label><br/>
-                    <input type="text"><br/>
-                    <label for="">Email</label><br/>
-                    <input type="email"><br/>
-                    <label for="">Mensagem</label><br/>
-                    <textarea name="" id=""></textarea><br/>
-                    <a class="botao" href="">Enviar mensagem</a>
-                </form>
-            </div>
+        <div style="width: 50%; float:left">
+            <form action="">
+                <label for="">Nome completo</label><br/>
+                <input type="text"><br/>
+                <label for="">Email</label><br/>
+                <input type="email"><br/>
+                <label for="">Mensagem</label><br/>
+                <textarea name="" id=""></textarea><br/>
+                <label for="combobox">Assunto</label><br/>
+                <select name="combobox" id="">
+                    <option value="1">Jurídico</option>
+                    <option value="2">Finaceiro</option>
+                    <option value="3">Suport</option>
+                </select><br/>
+                <a class="botao" href="">Enviar mensagem</a>
+            </form>
+        </div>
 
-            <div style="width: 50%; float:right">
-                <h3> Se preferir ligue para nosso número:</h3>
-                <h1>(84) 98888-9999</h1>
-            </div>
+        <div style="width: 50%; float:right">
+            <h3> Se preferir ligue para nosso número:</h3>
+            <h1>(84) 98888-9999</h1>
+        </div>
     </div>
 
 </section>
+    <section id="CRONOGRAMA">
+            <div class="conteudo">
+                <h1 class="titulo">CRONOGRAMA</h1>
+                    <DIv>
+                        <TAble id="TAB">
+                            <tr class="central">
+                                <th>Palestrante</th>
+                                <th>Assunto</th>
+                                <th>Início</th>
+                            </tr>
+                            <tr>
+                                <td>Franklin Dias</td>
+                                <td>Programação WEB</td>
+                                <td class="dir">08:00</td>
+                            </tr>
+                            <tr>
+                                <td>João da Silva</td>
+                                <td>HTML, CSS e JS</td>
+                                <td class="dir">10:00</td>
+                            </tr>
+                            <tr>
+                                <td>Pedro Paulo</td>
+                                <td>Empreendedorismo</td>
+                                <td class="dir">12:00</td>
+                            </tr>
+                        </TAble>
+                    </DIv>
+            </div>
+    </section>
 
 </body>
 </html>

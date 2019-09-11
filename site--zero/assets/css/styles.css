@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
 nav#menu{
-    background-color: black;
+    background-color: #002e4e;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -27,7 +27,7 @@ nav#menu a{
     
 }
 nav#menu a:hover{
-    background-color: white;
+    background-color: #fff;
     color: black;
 
 }
@@ -56,7 +56,7 @@ div#conteudo-principal h3{
 }
 
 a.botao{
-    background:orange;
+    background:#002e4e;
     padding: 10px;
     color: white;
     text-decoration: none;
@@ -65,7 +65,7 @@ a.botao{
     line-height: 70px;
 }
 a.botao:hover{
-    background-color: orangered;
+    background-color: #011e31;
 }
 .bg-cinza{
     background-color: #333;  
@@ -82,12 +82,29 @@ h1.titulo{
 }
 /* ------------------Seção 3------------------------------------ */
 div.item{
-    width: 33%;
+    width: 25%;
     text-align: center;
     float: left;
 }
-section#contato input, section#contato textarea{
+section#contato input, section#contato textarea, section#contato select{
     padding: 10px;
     width: 80%;
     margin-bottom: 20px;
 }
+h3#data{
+    color: #ffd800;
+}
+table#TAB{
+width: 100%;
+}
+tr.central{
+    text-align: center;
+}
+td.dir{
+    text-align: right;
+}
+
+table, th,td{
+    border: 3px solid black;
+    border-collapse: collapse;
+  }
